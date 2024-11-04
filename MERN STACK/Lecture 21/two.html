@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            padding: 40px;
+            background-color: beige;
+            border: 3px solid #000;
+            display: flex;
+            flex-direction: row;
+            width: 800px;
+            margin: 10px;
+        }
+        #box-left{
+            background-color: aquamarine;
+            border: 1px solid brown;
+            width: 47%;
+            margin: 3px;
+            padding: 2px;
+            display: flex;
+            flex-direction: column;
+        }
+        #box-right{
+            background-color: yellow;
+            border: 1px solid blue;
+            width: 48%;
+            margin: 3px;
+            padding: 2px;
+        }
+        @media screen and (max-width:600px) {
+            .container{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+      <div id="box-left">
+        <p>Hello Ji !!</p>
+        <p>Welcome Everyone</p>
+      </div>
+      <div id="box-right">
+        <img src="../Lecture 10/Abrar Khan.jpeg" alt="" style="width: 120px;">
+      </div>
+     </div>
+</body>
+</html>

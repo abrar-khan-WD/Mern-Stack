@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        :root{
+            --primary-color:green;
+        }
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: 2px oslid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: aquamarine;
+            width: 330px;
+            height: 330px;
+            border: 1px solid brown;
+            margin: 5px;
+            padding: 5px;
+            box-shadow:   20px 10px 5px 2px  var(--primary-color);
+            
+        }
+        .box img{
+            width: 200px;
+        }
+        .box h2{
+            font-size: 22px;
+            font-weight: 600;
+            text-shadow: 2px 2px rgb(248, 29, 29);
+
+        }
+        .box h2#demo{
+            font-size: 22px;
+            font-weight: 600;
+            text-shadow: rgb(248, 29, 29) 2px 2px;
+
+        }
+        h3{
+            text-shadow: 50px 2px red, 10px 3px var(--primary-color);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Property</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="logo.gif" alt="">
+            <h3>Abrar Khan</h3>
+            <h2>Welcome to Code Help</h2>
+            <h2 id="demo">Demo Work</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda laudantium iste autem quod nisi quos expedita fugiat. Minima, fugiat quos.</p>
+        </div>
+    </div>
+</body>
+</html>

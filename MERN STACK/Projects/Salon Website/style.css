@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#banner{
+    background: linear-gradient(rgba(0,0,0,0.5), #009688), url('images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}   
+.logo{
+    width: 140px;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+}
+.banner-text{
+    text-align: center;
+    color: #fff;
+    padding-top: 180px;
+}
+.banner-text h1{
+    font-size: 130px;
+    font-family: 'Kaushan Script', cursive;
+}
+.banner-text p {
+    font-size: 20px;
+    font-style: italic;
+}
+.banner-button{
+    margin: 70px auto;
+}
+.banner-button a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    width: 150px;
+    margin: 0 12px;
+    padding: 12px 0;
+    color: #fff;
+    border: .5px solid #fff;
+}

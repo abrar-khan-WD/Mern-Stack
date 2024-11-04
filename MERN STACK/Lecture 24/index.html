@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .box{
+            height: 400px;
+            width: 400px;
+            background-color: beige;
+            border: 2px solid #000;
+            transition-property: width 2s, height 3s;
+            transition-duration: 5s;
+            transition-delay: 1s;
+            transition-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+        }
+        /* Psuedo Classes */
+        .box:hover{
+            width:1800px;
+            height: 800px;
+            background-color: orange;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition in Css</title>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>
