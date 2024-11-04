@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in HTML</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Job Application</h2>
+        <form>
+            <label for="name">Name :</label>
+            <input type="text" name="name" id="name">
+            <br/>
+            <label for="email">Email :</label>
+            <input type="email" name="email" id="email">
+            <br/><br/>
+            <label for="phone">Phone :</label>
+            <input type="tel" name="phone" id="phone">
+            <br/><br/>
+            <label for="resume">Resume :</label>
+            <input type="file" name="resume" id="resume">
+            <br/><br/>
+            <label for="experience">Experience (Years)</label>
+            <input type="number" name="experience" id="experience">
+            <br/><br/>
+            <fieldset>
+                <legend>Choose Your Interest</legend>
+                <input type="checkbox" name="html" id="html">
+                <label for="html">HTML</label>
+                <br/>
+                <input type="checkbox" name="css" id="css"> 
+                <label for="css">Css</label>
+                <br/>
+                <input type="checkbox" name="js" id="js">
+                <label for="js">Javascript</label>
+            </fieldset>
+            <br/><br/>
+            <label for="education">Highest Education</label>
+            <select name="school" id="school">
+                <option value="ssc">SSC</option>
+                <option value="cbse">CBSE</option>
+                <option value="hsc">HSC</option>
+            </select>
+            <br/><br/>
+            <label for="availabality">Availability</label>
+            <br/>
+            <input type="radio" name="fulltime" id="fulltime" >
+            <label for="fulltime">Full Time</label>
+            <br/><br/>
+            <input type="radio" name="fulltime" id="parttime" >
+            <label for="parttime">Part Time</label>
+            <br/><br/>
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="" cols="30" rows="10"></textarea>
+        </form>
+    </div>
+</body>
+</html>

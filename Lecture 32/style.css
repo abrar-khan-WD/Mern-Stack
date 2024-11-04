@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.item{
+    height: 150px;
+    width: 150px;
+    background: rgb(166, 180, 14);
+    border: 2px solid #000;
+    padding: 2rem;
+}
+.container{
+    background-color: antiquewhite;
+    padding: 5rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+#rotate-x:hover {
+    transform: rotateX(45deg);
+}
+#rotate-y:hover {
+    transform: rotateY(45deg);
+}
+#rotate-z:hover {
+    transform: rotateZ(45deg);
+}
+#translate-x:hover {
+    transform: translateX(100px);
+}
+#translate-y:hover {
+    transform: translateY(-100px);
+}
+#translate-Z:hover {
+    transform:perspective(300px) translateZ(100px);
+}
+#scale-x:hover {
+    transform: scaleX(1.5);
+}
+#scale-y:hover {
+    transform: scaleY(1.5);
+}
+#scale-z:hover {
+    transform:perspective(300px) rotateY(45deg) scaleZ(5);
+}

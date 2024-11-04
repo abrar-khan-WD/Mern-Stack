@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    display: grid;
+    gap: 3rem;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns:repeat(4,1fr) ;
+    height: 100%;
+    width: 100%;
+    background-color: beige;
+    padding: 4rem;
+}
+.item{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(104, 156, 201);
+    border: 5px solid #d6b7b7;  
+    place-self: center;
+}

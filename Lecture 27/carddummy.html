@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 100vh;
+        width: 100vw;
+        background-color: #0093e9;
+        background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: aliceblue;
+        height: 600px;
+        width: 400px;
+        border-radius: 20px;
+        gap: 30px;
+      }
+      .card img {
+        height: 30%;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+      .textsection {
+        display: flex;
+        flex-direction: column  ;
+        width: 70%;
+        gap: 20px;
+        text-align: center;
+        line-height: 20px;
+      }
+      .textsection h2{
+        font-family: poppins;
+        font-size: 22px;
+      }
+      .textsection p{
+        font-size: 16px;
+        font-weight: 500;
+      }
+      .card #amountBox{
+        width: 70%;
+        height: 10%;
+        background-color:#BBCDD5;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+      div.leftBox{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 0 10px;
+      }
+      div.leftBox .imgBox{
+        display: flex;
+        flex-direction: column;
+      }
+      div.rightBox{
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+      }
+
+      button#payment-btn{
+        width: 70%;
+        height: 10%;
+        font-size: 16px;
+        text-decoration: none;
+        background-color: #030E3E;
+        color: #fff9f9;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: -9px 14px 13px -4px #888888;
+        cursor: pointer;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Dummy</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="/images (1).jfif" alt="" />
+        <div class="textsection">
+          <h2>Order Summary</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magni
+            unde alias, dolorem quibusdam quae!
+          </p>
+        </div>
+        <div id="amountBox">
+          <div class="leftBox">
+            <div class="imgBox">
+                <span class="music-icon"><i class="fa-solid fa-music"></i></span>
+            </div>
+            <div class="textAmountBox">
+                <h4>Annual Plan<br/>$99.99 / Year</h4>
+            </div>
+          </div>
+            <div class="rightBox">
+                <a href="#">Change</a>
+            </div>
+               
+        </div>
+
+        <button id="payment-btn">
+            Proceed to Payment
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

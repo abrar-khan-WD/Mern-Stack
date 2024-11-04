@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+    background-color: beige;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); /* Two equal rows */
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 2rem;
+}
+
+.item {
+    background-color: rgb(111, 168, 149);
+    border: 2px solid #a17575;
+    height: 100%; /* Let the grid control the height */
+    width: 100%; /* Let the grid control the width */
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.sidebar {
+    grid-column: 3; /* Place sidebar in the rightmost column */
+    grid-row: 1 / span 2; /* Make the sidebar span two rows */
+}
